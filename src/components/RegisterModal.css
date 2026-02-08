@@ -1,0 +1,293 @@
+/* Register Modal Styling */
+
+.modal-content.shopee {
+  max-width: 420px;
+  padding: 0;
+}
+
+.modal-content.shopee.register-modal {
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header.simple {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.shopee-body {
+  padding: 20px;
+}
+
+.btn.full {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.btn.full:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Form Control Enhanced */
+.form-control.valid {
+  border-color: #28a745 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2328a745' viewBox='0 0 16 16'%3E%3Cpath d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* ✅ PASSWORD STRENGTH BAR */
+.password-strength-bar {
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.password-strength-fill {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.password-strength-text {
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* ✅ PASSWORD REQUIREMENTS CHECKLIST */
+.password-requirements {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  animation: fadeIn 0.3s ease;
+}
+
+.requirement-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.requirement-item:last-child {
+  margin-bottom: 0;
+}
+
+.requirement-item i {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* ✅ VALID REQUIREMENT (Green Check) */
+.requirement-item.valid {
+  color: #28a745;
+}
+
+.requirement-item.valid i {
+  color: #28a745;
+}
+
+/* ❌ INVALID REQUIREMENT (Red X) */
+.requirement-item.invalid {
+  color: #6c757d;
+}
+
+.requirement-item.invalid i {
+  color: #dc3545;
+}
+
+/* ✅ PASSWORD VALID SUCCESS MESSAGE */
+.password-valid-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  color: #155724;
+  font-size: 13px;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease;
+}
+
+.password-valid-message i {
+  color: #28a745;
+  font-size: 16px;
+}
+
+/* Success Text for Matching Passwords */
+.success-text {
+  color: #28a745;
+  font-size: 13px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.success-text i {
+  font-size: 14px;
+}
+
+/* OR divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.divider span {
+  margin: 0 10px;
+}
+
+/* Social buttons */
+.social-login {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.social-btn.google {
+  color: #db4437;
+}
+
+.social-btn.facebook {
+  color: #1877f2;
+}
+
+.social-btn.twitter {
+  color: #1da1f2;
+}
+
+.social-btn.line {
+  color: #06c755;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .modal-content.shopee.register-modal {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+
+  .shopee-body {
+    padding: 15px;
+  }
+
+  .requirement-item {
+    font-size: 12px;
+  }
+
+  .requirement-title {
+    font-size: 11px;
+  }
+
+  .password-valid-message {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Styling for Modal */
+.modal-content.shopee.register-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content.shopee.register-modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal-content.shopee.register-modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.modal-content.shopee.register-modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
